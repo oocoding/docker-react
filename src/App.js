@@ -12,6 +12,7 @@ function App() {
         </p>
         <p>
           I have been changed.
+          version: 1.1.0
         </p>
         <a
           className="App-link"
