@@ -10,6 +10,12 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <p>
+          From Docker.
+        </p>
+        <p>
+          Hello World.I am from china.very cool
+        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
