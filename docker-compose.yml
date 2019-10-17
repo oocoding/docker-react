@@ -1,0 +1,17 @@
+version: "3"
+
+
+services: 
+  react_app:
+    build: 
+      context: .
+      dockerfile: Dockerfile.dev
+
+    ports: 
+      - 3000:3000
+
+    volumes: 
+      # according to the Dockerfile. where is the local file.
+      # 
+      - /app/node_modules
+      - ./:/app/
