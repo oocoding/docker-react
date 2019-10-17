@@ -1,5 +1,8 @@
 version: "3"
 
+# The same as
+# $ docker build -f Dockerfile.dev --tag=zhang/react:1.0 .
+# $ docker run -it -d -p 3000:3000 -v /app/node_modules -v ./:/app zhang/react:1.0 
 
 services: 
   react_app:
