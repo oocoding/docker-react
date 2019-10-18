@@ -1,0 +1,17 @@
+# created the file: .travis.yml
+
+language: generic
+
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker build --tag=zhangxx/client -f Dockerfile.dev .
+
+# script is that, all command will be executed after installed.
+script:
+  - docker run -e CI=true zhangxx/client npm run test
+  # - docker run -e CI=true zhangxx/client npm run test
+
