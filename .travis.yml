@@ -1,5 +1,5 @@
 # created the file: .travis.yml
-
+# auto deploy success..
 language: generic
 
 sudo: required
@@ -31,4 +31,3 @@ deploy:
     
   secret_access_key:
     secure: "$AWS_SECRET_KEY"
-    
