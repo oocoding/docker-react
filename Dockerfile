@@ -17,5 +17,9 @@ RUN npm run build
 # step: 2
 FROM nginx
 
+# just useful for beanstalk.
+# In the terminal, should use -p or use ports in the docker-compose.yml.
+EXPOSE 80
+
 COPY --from=builder /app/build/ /usr/share/nginx/html/
 
